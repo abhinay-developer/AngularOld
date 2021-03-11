@@ -1,0 +1,14 @@
+[ngIf]
+Properties
+Property	Description
+@Input()
+ngIf: T	Write-Only
+The Boolean expression to evaluate as the condition for showing a template.
+
+@Input()
+ngIfThen: TemplateRef<NgIfContext<T>>	Write-Only
+A template to show if the condition expression evaluates to true.
+
+@Input()
+ngIfElse: TemplateRef<NgIfContext<T>>	Write-Only
+A template to show if the condition expression evaluates to false.

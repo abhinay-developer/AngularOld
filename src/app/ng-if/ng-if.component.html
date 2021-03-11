@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">    <h1>ngIf Directive </h1>
+    <button (click)="show = !show" class="btn btn-primary">{{show ? 'hide' : 'show'}}</button>
+    show = {{show}}
+    <br>
+    <div *ngIf="show; else elseBlock">Text to show</div>
+    <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+
+    <button (click)="showData=!showData" class="btn btn-info">{{showData? 'hide':'showData'}}</button>
+    <br>
+    <!--The NgIf directive is used when you want to display or remove an element based on a condition
+    If the condition is false the element the directive is attached to will be removed from the DOM
+    https://codecraft.tv/courses/angular/built-in-directives/ngif-and-ngswitch/-->
+    <div *ngIf="showData; else elseBlock">Text to Display</div>
+    <ng-template #elseBlock><b>Alternate text while primary text is hidden</b></ng-template>
+
+
+
+</div>
+
+</body>
+</html>

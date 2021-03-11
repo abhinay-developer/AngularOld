@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectControl</title>
+</head>
+<body>
+    
+   <div class="container">
+
+   <select name="gender" id="gender-id">
+       <option value="{{item.genderType}}"  *ngFor="let item of genderTypeItem">{{item.genderType}}</option>
+
+   </select>
+
+
+   </div>
+
+</body>
+</html>
